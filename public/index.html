@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pixl AI</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon for the website -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header section with navigation -->
+    <header class="box1">
+        <h1>PIXL AI</h1>
+        <nav class="container">
+            <!-- Navigation tabs -->
+            <div class="tabs">
+                <button class="tab active" data-tab="home">Home</button>
+                <button class="tab" data-tab="generate">Generate</button>
+                <button class="tab" data-tab="enhance">Enhance</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home section with image grid -->
+        <section id="home" class="content active">
+            <div class="image-grid">
+                <!-- Image items with descriptions -->
+                <div class="image-item">
+                    <div class="image-wrapper">
+                        <img src="https://ideogram.ai/api/images/direct/2q24meocS0KigC6jjmN_Jw.jpg" alt="AI Statue of Liberty">
+                    </div>
+                    <p class="image-description">Meme</p>
+                </div>
+                <div class="image-item">
+                    <div class="image-wrapper">
+                        <img src="https://ideogram.ai/api/images/direct/5MmOoNP1Thepwfm4y_7PzA.jpg" alt="PIXL AI logo">
+                    </div>
+                    <p class="image-description">Dark Logo</p>
+                </div>
+                <div class="image-item">
+                    <div class="image-wrapper">
+                        <img src="https://ideogram.ai/api/images/direct/znC3AtOlTOK14_Aqw3MHkg.jpg" alt="PIXL AI logo">
+                    </div>
+                    <p class="image-description">Donut Land</p>
+                </div>
+                <div class="image-item">
+                    <div class="image-wrapper">
+                        <img src="https://ideogram.ai/api/images/direct/G8Au6X4vQRGEjttYMjOrdw.jpg" alt="Squid GPT sign">
+                    </div>
+                    <p class="image-description">CRT TV</p>
+                </div>
+                <div class="image-item">
+                    <div class="image-wrapper">
+                        <img src="https://ideogram.ai/api/images/direct/VTTXDo3dQZKBWfTqEORe3w.jpg" alt="Futuristic octopus">
+                    </div>
+                    <p class="image-description">Retro TV</p>
+                </div>
+                <div class="image-item">
+                    <div class="image-wrapper">
+                        <img src="https://ideogram.ai/api/images/direct/MazKzFJFRSWkQBgT0iZSBQ.jpg" alt="SAMEERIZZ text">
+                    </div>
+                    <p class="image-description">Underwater Text</p>
+                </div>
+                <div class="image-item">
+                    <div class="image-wrapper">
+                        <img src="https://ideogram.ai/api/images/direct/QGrve_0ERSqzsPy86ucQMQ.jpg" alt="PIXL AI TV">
+                    </div>
+                    <p class="image-description">Squid Game</p>
+                </div>
+                <div class="image-item">
+                    <div class="image-wrapper">
+                        <img src="https://ideogram.ai/api/images/direct/Kptm1UTSQsyvSB3etig7dw.jpg" alt="RIZZ sign">
+                    </div>
+                    <p class="image-description">Cave RIZZ</p>
+                </div>
+                <div class="image-item">
+                    <div class="image-wrapper">
+                        <img src="https://ideogram.ai/api/images/direct/JgapOv7pR0mUf0lJpA9qqQ.jpg" alt="Abstract patterns">
+                    </div>
+                    <p class="image-description">Abstract Art</p>
+                </div>
+                <div class="image-item">
+                    <div class="image-wrapper">
+                        <img src="https://ideogram.ai/api/images/direct/0Yh1FD99Tk6DaxoqnGuBVw.jpg" alt="AI Statue of Liberty">
+                    </div>
+                    <p class="image-description">Cat Liberty</p>
+                </div>
+                <div class="image-item">
+                    <div class="image-wrapper">
+                        <img src="cake.webp" alt="cake">
+                    </div>
+                    <p class="image-description">Flux-Schnell Cake</p>
+                </div>
+            </div>
+        </section>
+        <!-- Generate section with form for image generation -->
+        <section id="generate" class="content">
+            <div class="box4">
+                <div id="image-container">
+                    <div id="result"></div>
+                    <div class="image-actions">
+                        <button class="action-btn download-btn" title="Download Image">
+                            <i class="fas fa-download"></i>
+                        </button>
+                        <button class="action-btn share-btn" title="Share Image">
+                            <i class="fas fa-share-alt"></i>
+                        </button>
+                    </div>
+                </div>
+                <form id="image-form">
+                    <input class="bat active" type="text" id="prompt" placeholder="Generate Anything" required>
+                    <button class="bat active" type="submit">Imagine</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Enhance section (coming soon) -->
+        <section id="enhance" class="content">
+            <div class="enhance-container">
+                <div class="enhance-background">
+                    <h2 class="enhance-text">Image Enhancement Coming Soon</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Link to external JavaScript file -->
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
