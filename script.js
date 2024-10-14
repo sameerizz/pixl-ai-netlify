@@ -65,6 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Image generation function (currently using mock data)
     async function generateImage(prompt) {
         try {
+            const hf_token = import.meta.env.VITE_HF_TOKEN;
             const app = await client("black-forest-labs/FLUX.1-schnell", {
                 hf_token: hf_token
             });
